@@ -432,3 +432,11 @@
         padding-top: 20px;
     }
 }
+
+@media (max-width: 767px) {
+    .portfolio_section {
+        display: flow-root;
+        height: auto;
+        margin-bottom: 0px;
+    }
+}

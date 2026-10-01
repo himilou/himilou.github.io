@@ -718,16 +718,16 @@ button {
     padding-bottom: 90px;
 }
 
-.contact_taital {
+.contact_title {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #f5c729;
+    color: #7FC9FFFF;
     font-weight: bold;
     text-align: center;
 }
 
-.contact_taital_1 {
+.contact_title_1 {
     color: #292929;
     border-bottom: 5px solid #363636;
 }
