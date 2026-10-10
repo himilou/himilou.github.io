@@ -56,7 +56,7 @@
 
       const carousel = window.jQuery && window.jQuery("#myCarousel");
       if (carousel && carousel.length && typeof carousel.carousel === "function") {
-         carousel.carousel({ interval: false });
+         carousel.carousel({ interval: 5000 });
          let touchStartY;
          carousel.on("touchstart", function (event) {
             touchStartY = event.originalEvent.touches[0].pageY;
