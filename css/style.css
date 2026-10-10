@@ -448,15 +448,15 @@ button {
     bottom: 0;
     margin: auto;
     height: 20px;
-    right: 10px;
-    left: auto;
+    right: auto;
+    left: 10px;
     width: auto;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
-    display: none;
+    display: flex;
 }
 
 .carousel-indicators li {
@@ -470,7 +470,7 @@ button {
 
 .carousel-indicators li.active {
     margin-bottom: 5px;
-    background: #ffffff;
+    background-color: blue;
 }
 
 
@@ -631,7 +631,7 @@ button {
 
 .portfolio_img {
     width: 100%;
-    background-image: url(../images/portfolio-img1.png);
+    background-image: url(../images/sign.webp);
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -639,7 +639,7 @@ button {
 
 .portfolio_img_2 {
     width: 100%;
-    background-image: url(../images/portfolio-img2.png);
+    background-image: url(../images/plane.png);
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
