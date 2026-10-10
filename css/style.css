@@ -141,7 +141,11 @@ h1, h2, h3 { margin: 0; line-height: 1.15; font-weight: 700; }
 
 .hero {
   position: relative;
-  background: var(--paper);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/code-bg.png');
+    background-size: cover;        /* Scales the image to fill the container without distortion */
+  background-position: center;   /* Keeps the center of the image focused */
+  background-repeat: no-repeat; 
+ /* background: var(--paper); */
   overflow: hidden;
 }
 
@@ -191,7 +195,9 @@ h1, h2, h3 { margin: 0; line-height: 1.15; font-weight: 700; }
   margin: 1.25rem 0 0;
   font-size: clamp(1.15rem, 3.5vw, 1.5rem);
   line-height: 1.4;
-  color: var(--ink);
+  /*color: var(--ink); */
+  color:#dfe5e3
+  
 }
 
 .hero-photo {
@@ -325,13 +331,32 @@ h1, h2, h3 { margin: 0; line-height: 1.15; font-weight: 700; }
 
 .section { padding-block: clamp(3rem, 8vw, 5.5rem); }
 
+.center { text-align: center;}
+
 .section-title {
   margin-bottom: 0.5rem;
   font-size: clamp(2rem, 6vw, 2.75rem);
   color: var(--royal);
 }
+.portfolio_title {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color:#7FC9FFFF;
+    font-weight: bold;
+    text-align: center;
+}
 
-.section-intro { margin: 0 0 2.5rem; max-width: 60ch; }
+.portfolio_title_1 {
+    color: #fefefd;
+   /* border-bottom: 5px solid #fefefd; */
+}
+
+.section-intro { 
+  margin: 0 0 2.5rem; 
+  max-width: 60ch; /* 60 chars width per line */
+  margin-inline: auto;
+} 
 
 /* --- Tiles (the four round links) --- */
 
@@ -345,7 +370,7 @@ h1, h2, h3 { margin: 0; line-height: 1.15; font-weight: 700; }
 }
 
 @media (min-width: 800px) {
-  .tiles { grid-template-columns: repeat(4, 1fr); }
+  .tiles { grid-template-columns: repeat(3, 1fr); }
 }
 
 .tile {
